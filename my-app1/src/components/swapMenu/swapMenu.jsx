@@ -11,7 +11,11 @@ function SwapMenu() {
       <NavBar />
 
       <div className="Item-menu-main-block">
-        <div className="Info-menu-main-block"></div>
+        <div className="Info-menu-main-block">
+            <div className="Info-text">
+              hello world!
+            </div>
+        </div>
 
         <div className="Image-panel-swapMenu"></div>
         <div className="Extra-image-swapMenu">

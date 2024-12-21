@@ -10,31 +10,30 @@ function ChatSection() {
         crossOrigin="anonymous"
       />
       <NavBar />
-      <div className="Confs-section">
-        <div className="Chat-one">
-          <div className="Chat-name"></div>
+      <div className="Dialog-menu">
+        <div className="Confs-section">
+          <div className="Chat-one">
+            <div className="Chat-name"></div>
+          </div>
+          <div className="Chat-one">
+            <div className="Chat-name"></div>
+          </div>
+          <div className="Chat-one">
+            <div className="Chat-name"></div>
+          </div>
+          <div className="Chat-one">
+            <div className="Chat-name"></div>
+          </div>
+          <div className="Chat-one">
+            <div className="Chat-name"></div>
+          </div>
+          <div className="Chat-one">
+            <div className="Chat-name"></div>
+          </div>
         </div>
-        <div className="Chat-one">
-          <div className="Chat-name"></div>
+        <div className="Dialog-section">
+          <div className="Message-panel"></div>
         </div>
-        <div className="Chat-one">
-          <div className="Chat-name"></div>
-        </div>
-        <div className="Chat-one">
-          <div className="Chat-name"></div>
-        </div>
-        <div className="Chat-one">
-          <div className="Chat-name"></div>
-        </div>
-        <div className="Chat-one">
-          <div className="Chat-name"></div>
-        </div>
-        <div className="Chat-one">
-          <div className="Chat-name"></div>
-        </div>
-      </div>
-      <div className="Dialog-section">
-        <div className="Message-panel"></div>
       </div>
     </div>
   );
