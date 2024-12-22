@@ -1,260 +1,309 @@
 .Item-image-swapmenu {
-  background-color: #fbfbfb;
-  width: 70px;
-  height: 65px;
-  border-radius: 10px;
-  margin-left: 11px;
+    background-color: #fbfbfb;
+    width: 70px;
+    height: 65px;
+    border-radius: 10px;
+    margin-left: 11px;
+}
+
+.Item-image-swapmenu-micro {
+    width: 70px;
+    height: 65px;
 }
 
 .Item-block {
-  width: 280px;
-  height: 297px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  margin-left: 53px;
-  margin-right: 30px;
+    width: 280px;
+    height: 297px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-left: 53px;
+    margin-right: 30px;
 }
 
 .Item-image {
-  width: 300px;
-  height: 230px;
-  background-color: #8a2be2;
-  border-radius: 10px;
+    width: 300px;
+    height: 230px;
+    background-color: #8a2be2;
+    border-radius: 10px;
 }
+
 .Item-title {
-  width: 300px;
-  height: 20px;
-  background-color: #4f646f;
-  border-radius: 5px;
-  text-align: center;
+    width: 300px;
+    height: 25px;
+    background-color: #4f646f;
+    border-radius: 5px;
+    text-align: center;
+    color: #e4e2e7;
 }
+
 .Item-text {
-  width: 300px;
-  height: 50px;
-  background-color: #f4faff;
-  text-align: center;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #f4faff;
+    text-align: center;
 
 }
+
 .App-header {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
 }
+
 .Main-page {
-  background-color: #dee7e7;
-  width: 100%;
-  height: 760px;
+    background-color: #dee7e7;
+    width: 100%;
+    height: 760px;
 }
+
 .New-element {
-  background-color: #6d05f6e7;
+    background-color: #6d05f6e7;
 }
+
 .Nav-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  border-bottom: #4c00ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    border-bottom: #4c00ff;
 }
+
 .Item-section {
-  background-color: #b7adcf;
-  display: flex;
-  flex-direction: row;
-  justify-content:start;
-  flex-wrap: wrap;
-  margin-left: 10px;
-  width: 1500px;
-  height: 670px;
-  border-radius: 15px;
+    background-color: #b7adcf;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    width: 1500px;
+    height: 670px;
+    border-radius: 15px;
 }
+
 .Logo-link {
-  margin-left: 6%;
+    margin-left: 6%;
 }
+
 .Logo {
-  height: 85px;
-  width: 65px;
+    height: 85px;
+    width: 65px;
 }
-.Notification-button{
-  margin-top: 20px;
+
+.Notification-button {
+    margin-top: 20px;
 
 }
+
 .Chat-button {
-  margin-left: 60%;
-  margin-top: 20px;
+    margin-left: 60%;
+    margin-top: 20px;
 
 }
+
 .Item-create {
-  position: absolute;
-  top:90%;
-  left: 90%;
+    position: absolute;
+    top: 90%;
+    left: 90%;
 }
+
 .Profile-button {
-  margin-top: 20px;
-  margin-right: 5%;
+    margin-top: 20px;
+    margin-right: 5%;
 
 }
-.Notification-pic{
-  width: 30px;
-  height: 30px;
+
+.Notification-pic {
+    width: 30px;
+    height: 30px;
 }
-.Chat-pic{
-  width: 30px;
-  height: 30px;
- 
+
+.Chat-pic {
+    width: 30px;
+    height: 30px;
+
 }
-.Create-pic{
-  width: 30px;
-  height: 30px;
+
+.Create-pic {
+    width: 30px;
+    height: 30px;
 }
-.profile-pic{
-  padding-bottom: 2px;
-  width: 30px;
-  height: 30px;
+
+.profile-pic {
+    padding-bottom: 2px;
+    width: 30px;
+    height: 30px;
 }
+
 .Image-panel-swapMenu {
-  width: 500px;
-  height: 480px;
-  background-color: #fbfbfb;
-  border-radius: 10px;
-  margin-left: 20px;
-  margin-top: 20px;
+    width: 500px;
+    height: 480px;
+    background-color: #fbfbfb;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
+
 .Extra-image-swapMenu {
-  background-color: #73688d;
-  width: 500px;
-  height: 80px;
-  margin-left: 20px;
-  border-radius: 10px;
-  padding-top: 7px;
-  display: flex;
-  flex-direction: row;}
+    background-color: #73688d;
+    width: 500px;
+    height: 80px;
+    margin-left: 20px;
+    border-radius: 10px;
+    padding-top: 7px;
+    display: flex;
+    flex-direction: row;
+}
 
 .Item-menu-main-block {
-  width: 1480px;
-  height: 620px;
-  background-color: #b7adcf;
-  border-radius: 10px;
-  margin-left: 20px;
-  margin-top: 10px;
-  padding: 10px;
+    width: 1480px;
+    height: 620px;
+    background-color: #b7adcf;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 10px;
 }
+
 .Item-menu {
-  background-color: #dee7e7;
-  width: 1580px;
-  height: 1024px;
+    background-color: #dee7e7;
+    width: 1580px;
+    height: 1024px;
 }
+
 .Chat-main {
-  background-color: #dee7e7;
-  width: 100%;
-  height: 740px;
+    background-color: #dee7e7;
+    width: 100%;
+    height: 740px;
 
 }
-.Confs-section{
-  background-color: #faf6ff;
-   width: 500px;
-  height: 630px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
+
+.Confs-section {
+    background-color: #faf6ff;
+    width: 500px;
+    height: 630px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 
 }
-.Chat-one{
-  background-color: #B7ADCF;
-  margin-top: 20px ;
-  width: 340px;
-  height: 80px;
-  border-radius: 10px;
-  margin-left: 70px;
+
+.Chat-one {
+    background-color: #B7ADCF;
+    margin-top: 20px;
+    width: 340px;
+    height: 80px;
+    border-radius: 10px;
+    margin-left: 70px;
 
 }
-.Chat-name{
-  background-color: #302740;
-  width: 340px;
-  height: 20px;
-  border-radius: 10px;
+
+.Chat-name {
+    background-color: #302740;
+    width: 340px;
+    height: 20px;
+    border-radius: 10px;
 }
-.Dialog-section{
-  background-color: #f9f7fd;
-  width: 900px;
-  height: 570px;
-  border-radius: 10px;
+
+.Dialog-section {
+    background-color: #f9f7fd;
+    width: 900px;
+    height: 570px;
+    border-radius: 10px;
 
 }
-.Dialog-menu{
- display: flex;
- flex-direction: row;
- margin: auto;
- justify-content:space-around;
+
+.Dialog-menu {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
 
 }
-.Link-decoration{
-  text-decoration: none;
-  color: rgb(23, 1, 32);
-  padding-top: 20px;
+
+.Link-decoration {
+    text-decoration: none;
+    color: rgb(23, 1, 32);
+    padding-top: 20px;
 
 }
-.Icon-background{
-  background-color: #B7ADCF;
-  width: 720px;
-  height: 55px;
-  border-radius: 10px;
-  margin-left: 395px;
-  margin-top: 10px;
+
+.Icon-background {
+    background-color: #B7ADCF;
+    width: 720px;
+    height: 55px;
+    border-radius: 10px;
+    margin-left: 395px;
+    margin-top: 10px;
 }
-.Profile-panel{
-  background-color: #dee7e7;
-  width: 100%;
-  height: 740px;
-  display: flex;
-  flex-direction: column;
+
+.Profile-panel {
+    background-color: #dee7e7;
+    width: 100%;
+    height: 740px;
+    display: flex;
+    flex-direction: column;
 
 }
-.Item-block-profile{
-  background-color: #B7ADCF;
-  width: 1440px;
-  height: 580px;
-  border-radius: 10px;
-  margin-left: 35px;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
-  flex-wrap: wrap;
+
+.Item-block-profile {
+    background-color: #B7ADCF;
+    width: 1440px;
+    height: 580px;
+    border-radius: 10px;
+    margin-left: 35px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.Icon-buttons-profile{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-bottom: 10px;
+
+.Icon-buttons-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
 
 }
-.My-item{
-  display: flex;
-  flex-direction: row;
+
+.My-item {
+    display: flex;
+    flex-direction: row;
 
 
 }
-.Rc-item{
-  display: flex;
-  flex-direction: row;
+
+.Rc-item {
+    display: flex;
+    flex-direction: row;
 
 }
-.Info-menu-main-block{
-  width: 100px;
-  height: 20px;
-  background-color: #4f646f;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  margin-left: 800px;
+
+.Info-menu-main-block {
+    width: 130px;
+    height: 25px;
+    background-color: #4f646f;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 800px;
+    color: white;
+    text-align: center;
+}
+
+.Item-give {
+    width: 40px;
+    height: 40px;
+}
+
+.Item-take {
+    width: 40px;
+    height: 40px;
 
 }
-.Item-give{
-  width: 40px;
-  height: 40px;
-}
-.Item-take{
-  width: 40px;
-  height: 40px;
 
+.trade-button {
+    margin-top: 450px;
 }

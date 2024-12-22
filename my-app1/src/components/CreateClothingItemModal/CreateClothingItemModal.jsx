@@ -41,7 +41,7 @@ const CreateClothingItemModal = ({show, handleClose, onItemCreated}) => {
         try {
             const response = await axios.post("http://127.0.0.1:8000/api/clothing-items/", form, {
                 headers: {
-                    Authorization: `Token 5498a5810252819fb7caef7050dbe1eeecc874ad`, 
+                    Authorization: `Token def1f869482fc2231089c7d2b2da15b69850dafd`,
                     "Content-Type": "multipart/form-data",
                 },
             });
