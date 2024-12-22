@@ -30,7 +30,6 @@ function Profile() {
           <div className="My-item">
             <ItemList itemData={"Hello World"} />
             <ItemList itemData={"привет мир"} />
-
             <ItemList itemData={"привет мир"} />
           </div>
         </div>
