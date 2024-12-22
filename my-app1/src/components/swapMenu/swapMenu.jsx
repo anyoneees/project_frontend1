@@ -21,6 +21,18 @@ function SwapMenu() {
     const closeModal = () => {
         setShowModal(false);
     };
+    const deleteFirstItem = async () => {
+        try {
+            const response = await axios.delete(`http://127.0.0.1:8000/api/clothing-items/${id}/`, {
+                headers: {
+                    Authorization: `Token def1f869482fc2231089c7d2b2da15b69850dafd`, // Замените на реальный токен
+                },
+            });
+            console.log("Item deleted successfully:", response.status);
+        } catch (error) {
+            console.error("Error deleting item:", error.response?.data || error.message);
+        }
+    };
     useEffect(() => {
         const fetchItemDetails = async () => {
             try {
@@ -68,10 +80,14 @@ function SwapMenu() {
                     >
                         Обменяться
                     </Button>
+                    <Button variant="danger" onClick={deleteFirstItem} className="delete-trade-button"
+                    >
+                        Удалить
+                    </Button>
                 </div>
 
                 <div className="Image-panel-swapMenu">
-                    <img src={item.image}/>
+                    <img className="Image-swapMenu" src={item.image}/>
 
                 </div>
                 <div className="Extra-image-swapMenu">

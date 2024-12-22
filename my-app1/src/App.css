@@ -145,6 +145,12 @@
     margin-top: 20px;
 }
 
+.Image-swapMenu {
+    width: 500px;
+    height: 480px;
+    border-radius: 5px;
+}
+
 .Extra-image-swapMenu {
     background-color: #73688d;
     width: 500px;
@@ -306,4 +312,7 @@
 
 .trade-button {
     margin-top: 450px;
+}
+.delete-trade-button {
+    margin-top: 10px;
 }
