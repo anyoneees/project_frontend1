@@ -1,13 +1,23 @@
-function ItemList({ itemData }) {
-  console.log(itemData);
-  return (
-    <div className="Item-block">
-      <a href="http://localhost:3000/swap-menu" className="Link-decoration">
-        <div className="Item-image"></div>
-        <div className="Item-title">{itemData}</div> 
-        <div className="Item-text">{itemData}</div>
-      </a>
-    </div>
-  );
-}
+import React from "react";
+
+const ItemList = ({itemData}) => {
+    return (
+        <div className="Item-block">
+            <a href={`/swap-menu/${itemData.id}`} className="Link-decoration">
+                {itemData.image && (
+                    <img
+                        src={itemData.image}
+                        className="Item-image"
+                        alt={itemData.title}
+                    />
+                )}
+                <div className="card-body">
+                    <h5 className="Item-title">{itemData.title}</h5>
+                    <p className="Item-text">{itemData.description}</p>
+                </div>
+            </a>
+        </div>
+    );
+};
+
 export default ItemList;

@@ -77,12 +77,14 @@
 
 }
 .Chat-button {
+  margin-left: 60%;
   margin-top: 10px;
   
 }
 .Item-create {
-  margin-top: 10px;
-  margin-left: 60%;
+  position: absolute;
+  top:90%;
+  left: 90%;
 }
 .Profile-button {
   margin-top: 10px;
