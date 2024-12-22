@@ -26,7 +26,7 @@ function SwapMenu() {
             try {
                 const response = await axios.get(`http://127.0.0.1:8000/api/clothing-items/${id}/`, {
                     headers: {
-                        Authorization: `Token def1f869482fc2231089c7d2b2da15b69850dafd`, // Замените YOUR_AUTH_TOKEN на реальный токен
+                        Authorization: `Token fe1242edcdcb90517e61704406d53be9d4d2020a`, // Замените YOUR_AUTH_TOKEN на реальный токен
                     },
                 });
                 setItem(response.data);
