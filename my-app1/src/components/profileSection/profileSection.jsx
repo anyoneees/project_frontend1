@@ -28,9 +28,7 @@ function Profile() {
         </div>
         <div className="Item-block-profile">
           <div className="My-item">
-            <ItemList itemData={"Hello World"} />
-            <ItemList itemData={"привет мир"} />
-            <ItemList itemData={"привет мир"} />
+            
           </div>
         </div>
       </div>
