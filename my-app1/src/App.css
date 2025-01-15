@@ -110,8 +110,11 @@
 
 .Profile-button {
     margin-top: 20px;
-    margin-right: 5%;
 
+}
+.Login-button {
+    margin-top: 20px;
+    margin-right: 50px;
 }
 
 .Notification-pic {

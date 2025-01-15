@@ -25,7 +25,7 @@ function SwapMenu() {
         try {
             const response = await axios.delete(`http://127.0.0.1:8000/api/clothing-items/${id}/`, {
                 headers: {
-                    Authorization: `Token def1f869482fc2231089c7d2b2da15b69850dafd`, // Замените на реальный токен
+                    Authorization: `Token fe1242edcdcb90517e61704406d53be9d4d2020a`, // Замените на реальный токен
                 },
             });
             console.log("Item deleted successfully:", response.status);
