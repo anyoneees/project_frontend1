@@ -5,10 +5,7 @@ import {
   ModalHeader,
   ModalBody,
   ModalFooter,
-  Input,
-  Label,
-  Form,
-  FormGroup,
+  Input
 } from 'reactstrap';
 
 function LoginWindow(props) {
@@ -18,24 +15,27 @@ function LoginWindow(props) {
 
   return (
     <div>
-        <Button color="danger" onClick={toggle}>
-          Click Me
+        <Button color="success" onClick={toggle}>
+          Вход
         </Button>
       <Modal isOpen={modal} toggle={toggle}>
-        <ModalHeader toggle={toggle}>Modal title</ModalHeader>
+        <ModalHeader toggle={toggle}>Авторизоваться</ModalHeader>
         <ModalBody>
           <Input
-            type="textarea"
-            placeholder="Write something (data should remain in modal if unmountOnClose is set to false)"
-            rows={5}
+            type="text"
+            placeholder="Login"
+          />
+          <Input
+              type="password"
+              placeholder="Password"
           />
         </ModalBody>
         <ModalFooter>
           <Button color="primary" onClick={toggle}>
-            Do Something
+            Войти
           </Button>{' '}
           <Button color="secondary" onClick={toggle}>
-            Cancel
+            Отмена
           </Button>
         </ModalFooter>
       </Modal>

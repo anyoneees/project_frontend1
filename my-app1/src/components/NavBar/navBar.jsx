@@ -42,13 +42,9 @@ function NavBar() {
           </a>
         </div>
         <div className="Login-button">
-            <Button
-              style={{ backgroundColor: "#73688D", borderColor: "#73688D" }}
-            >
-              Вход
-            </Button>
+          <LoginWindow />
         </div>
-        <LoginWindow />
+
       </header>
     </div>
   );
