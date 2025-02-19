@@ -114,7 +114,6 @@
 }
 .Login-button {
     margin-top: 20px;
-    margin-right: 50px;
 }
 
 .Notification-pic {
@@ -318,4 +317,23 @@
 }
 .delete-trade-button {
     margin-top: 10px;
+}
+.SignIn-button{
+    margin-top: 20px;
+
+}
+.Notif-header{
+    background-color: #dee7e7;
+    width: 100%;
+    height: 760px;
+    padding-top: 10px;
+}
+.Notif-background{
+    background-color: #c283d2;
+    width: 900px;
+    height: 700px;
+    border-radius: 20px;
+    display: flex;
+    margin: auto;
+
 }
