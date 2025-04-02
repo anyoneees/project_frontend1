@@ -39,7 +39,7 @@ export default function MainPage() {
             />
             <NavBar/>
             <div className="Item-create">
-                <Button variant="success"
+                <Button style={{ backgroundColor: "#4F646F", borderColor: "#73688D", borderRadius:"25px" }}
                         onClick={() => setModalShow(true)}>
                     <img className="Create-pic" src="create.png"/>
                 </Button>

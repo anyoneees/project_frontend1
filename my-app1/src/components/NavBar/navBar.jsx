@@ -1,7 +1,6 @@
 import { Button } from "react-bootstrap";
 import LoginWindow from "../DropWindow/dropWindow.jsx";
 import SignInWindow from "../RegistrationWindow/registrationWindow.jsx";
-
 function NavBar() {
   return (
     <div className="Nav-bar">
@@ -14,7 +13,7 @@ function NavBar() {
         <div className="Chat-button">
           <a href="http://localhost:3000/chat">
             <Button
-              style={{ backgroundColor: "#73688D", borderColor: "#73688D" }}
+              style={{ backgroundColor: "#D9D9D9", borderColor: "#73688D" }}
             >
               <img className="Chat-pic" src="http://localhost:3000/chat.png" />
             </Button>
@@ -23,7 +22,7 @@ function NavBar() {
         <div className="Notification-button">
           <a href="http://localhost:3000/notification">
             <Button
-              style={{ backgroundColor: "#73688D", borderColor: "#73688D" }}
+              style={{ backgroundColor: "#D9D9D9", borderColor: "#73688D" }}
             >
               <img
                 className="Notification-pic"
@@ -35,7 +34,7 @@ function NavBar() {
         <div className="Profile-button">
           <a href="http://localhost:3000/profile">
             <Button
-              style={{ backgroundColor: "#73688D", borderColor: "#73688D" }}
+              style={{ backgroundColor: "#D9D9D9", borderColor: "#73688D" }}
             >
               <img
                 className="profile-pic"
@@ -49,6 +48,9 @@ function NavBar() {
         </div>
         <div className="SignIn-button">
           <SignInWindow />
+        </div>
+        <div className="searchBar">
+          
         </div>
       </header>
     </div>

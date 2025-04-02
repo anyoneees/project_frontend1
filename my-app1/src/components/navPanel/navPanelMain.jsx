@@ -1,5 +1,6 @@
 import { Button } from "react-bootstrap";
 import { useState } from "react";
+import SearchBar from "../NavBar/searchBar";
 function NavPanel({ NavPanelData }) {
   //const colors = ["secondary","success", "warning","danger", "info","light", "dark"]
   //const [buttonStyle, setButtonStyle] = useState("primary");
@@ -11,7 +12,8 @@ function NavPanel({ NavPanelData }) {
   console.log(NavPanelData);
   return (
     <div className="Nav-block">
-      <Button>{NavPanelData}</Button>
+      <Button>{NavPanelData}{SearchBar}</Button>
+
     </div>
   );
 }

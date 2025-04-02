@@ -47,14 +47,16 @@
 }
 
 .App-header {
-    width: 100%;
     height: 100%;
+    width: 100%;
+    background-color: #4F646F;
     display: flex;
     justify-content: space-around;
+    box-shadow: 2px 2px 2px 1px rgba(2, 2, 23, 0.2);
 }
 
 .Main-page {
-    background-color: #dee7e7;
+    background-color: #EDF2F2;
     width: 100%;
     height: 760px;
 }
@@ -71,15 +73,13 @@
 }
 
 .Item-section {
-    background-color: #b7adcf;
     display: flex;
     flex-direction: row;
     justify-content: start;
     flex-wrap: wrap;
-    margin-left: 10px;
-    width: 1500px;
-    height: 670px;
-    border-radius: 15px;
+    margin: auto;
+    width: 100%;
+    height: 85%;
 }
 
 .Logo-link {
@@ -93,7 +93,7 @@
 
 .Notification-button {
     margin-top: 20px;
-
+   
 }
 
 .Chat-button {
@@ -336,4 +336,16 @@
     display: flex;
     margin: auto;
 
+}
+.searchBar-main {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.search {
+    width: 30%;
 }
