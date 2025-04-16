@@ -13,7 +13,7 @@ function NavBar() {
         <div className="Chat-button">
           <a href="http://localhost:3000/chat">
             <Button
-              style={{ backgroundColor: "#D9D9D9", borderColor: "#73688D" }}
+              style={{ backgroundColor: "#4F646F", borderColor: "#4F646F" }}
             >
               <img className="Chat-pic" src="http://localhost:3000/chat.png" />
             </Button>
@@ -22,7 +22,7 @@ function NavBar() {
         <div className="Profile-button">
           <a href="http://localhost:3000/profile">
             <Button
-              style={{ backgroundColor: "#D9D9D9", borderColor: "#73688D" }}
+              style={{ backgroundColor: "#4F646F", borderColor: "#4F646F" }}
             >
               <img
                 className="profile-pic"

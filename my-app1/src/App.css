@@ -174,24 +174,22 @@
 }
 
 .Chat-main {
-    background-color: #dee7e7;
+    background-color: #EDF2F2;
     width: 100%;
     height: 740px;
 
 }
 
 .Confs-section {
-    background-color: #faf6ff;
+    background-color: #DEE7E7;
     width: 500px;
-    height: 630px;
-    border-radius: 10px;
+    height: 740px;
     display: flex;
     flex-direction: column;
 
 }
 
 .Chat-one {
-    background-color: #B7ADCF;
     margin-top: 20px;
     width: 340px;
     height: 80px;
@@ -201,17 +199,21 @@
 }
 
 .Chat-name {
-    background-color: #302740;
+    background-color: #4F646F;
     width: 340px;
     height: 20px;
-    border-radius: 10px;
 }
 
+.Chat-pic{
+    width: 30px;
+    height: 30px;
+    background-color: #4c00ff;
+    margin-left: 30px;
+
+}
 .Dialog-section {
-    background-color: #f9f7fd;
     width: 900px;
-    height: 570px;
-    border-radius: 10px;
+    height: 740px;
 
 }
 

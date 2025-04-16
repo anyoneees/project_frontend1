@@ -20,6 +20,8 @@ function ChatSection() {
           </div>
           <div className="Chat-one">
             <div className="Chat-name"></div>
+            <div className="Chat-pic"></div>
+            <div className="Chat-text"></div>
           </div>
           <div className="Chat-one">
             <div className="Chat-name"></div>
