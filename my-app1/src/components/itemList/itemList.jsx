@@ -13,7 +13,7 @@ const ItemList = ({itemData}) => {
                 )}
                 <div className="card-body">
                     <h5 className="Item-title">{itemData.title}</h5>
-                    <p className="Item-text">{itemData.description}</p>
+                    
                 </div>
             </a>
         </div>

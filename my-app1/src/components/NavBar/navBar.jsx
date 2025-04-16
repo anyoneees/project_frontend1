@@ -19,18 +19,6 @@ function NavBar() {
             </Button>
           </a>
         </div>
-        <div className="Notification-button">
-          <a href="http://localhost:3000/notification">
-            <Button
-              style={{ backgroundColor: "#D9D9D9", borderColor: "#73688D" }}
-            >
-              <img
-                className="Notification-pic"
-                src="http://localhost:3000/notif2.png"
-              />
-            </Button>
-          </a>
-        </div>
         <div className="Profile-button">
           <a href="http://localhost:3000/profile">
             <Button
