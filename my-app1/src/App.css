@@ -105,8 +105,8 @@
 
 .Item-create {
     position: absolute;
-    top: 90%;
-    left: 90%;
+    bottom: 91.2%;
+    left: 70%;
 }
 
 .Profile-button {
@@ -207,7 +207,6 @@
 .Chat-pic{
     width: 30px;
     height: 30px;
-    background-color: #4c00ff;
     margin-left: 30px;
 
 }

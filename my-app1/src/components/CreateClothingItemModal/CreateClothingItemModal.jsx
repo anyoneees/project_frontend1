@@ -56,16 +56,16 @@ const CreateClothingItemModal = ({show, handleClose, onItemCreated}) => {
     return (
         <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton>
-                <Modal.Title>Create New Clothing Item</Modal.Title>
+                <Modal.Title>Создать обьявление</Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 {error && <Alert variant="danger">{error}</Alert>}
                 <Form onSubmit={handleSubmit}>
                     <Form.Group className="mb-3" controlId="title">
-                        <Form.Label>Title</Form.Label>
+                        <Form.Label>Название</Form.Label>
                         <Form.Control
                             type="text"
-                            placeholder="Enter title"
+                            placeholder="Введите текст"
                             name="title"
                             value={formData.title}
                             onChange={handleChange}
@@ -74,11 +74,11 @@ const CreateClothingItemModal = ({show, handleClose, onItemCreated}) => {
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="description">
-                        <Form.Label>Description</Form.Label>
+                        <Form.Label>Описание</Form.Label>
                         <Form.Control
                             as="textarea"
                             rows={3}
-                            placeholder="Enter description"
+                            placeholder="Введите текст"
                             name="description"
                             value={formData.description}
                             onChange={handleChange}
@@ -86,7 +86,7 @@ const CreateClothingItemModal = ({show, handleClose, onItemCreated}) => {
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="size">
-                        <Form.Label>Size</Form.Label>
+                        <Form.Label>Размер</Form.Label>
                         <Form.Control
                             type="text"
                             placeholder="Enter size"
@@ -118,7 +118,7 @@ const CreateClothingItemModal = ({show, handleClose, onItemCreated}) => {
                         />
                     </Form.Group>
 
-                    <Button variant="success" type="submit">
+                    <Button  type="submit" style={{backgroundColor: "#4F646F", borderColor: "#4F646F" }}>
                     <img className="Create-pic" src="create.png"/>
                     </Button>
                 </Form>
