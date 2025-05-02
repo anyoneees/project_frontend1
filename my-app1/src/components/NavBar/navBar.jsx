@@ -1,7 +1,11 @@
 import { Button } from "react-bootstrap";
 import LoginWindow from "../DropWindow/dropWindow.jsx";
 import SignInWindow from "../RegistrationWindow/registrationWindow.jsx";
+import SearchComponent from "../searchComponent/searchComponent.js";
 function NavBar() {
+  const handleSearch = (query) => {
+    console.log('Search query:', query);
+  };
   return (
     <div className="Nav-bar">
       <header className="App-header">
@@ -10,6 +14,7 @@ function NavBar() {
             <img className="Logo" src="http://localhost:3000/circula.png" />
           </a>
         </div>
+        <SearchComponent onSearch={handleSearch}/>
         <div className="Chat-button">
           <a href="http://localhost:3000/chat">
             <Button
@@ -36,9 +41,6 @@ function NavBar() {
         </div>
         <div className="SignIn-button">
           <SignInWindow />
-        </div>
-        <div className="searchBar">
-          
         </div>
       </header>
     </div>

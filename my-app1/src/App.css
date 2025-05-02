@@ -98,11 +98,16 @@
 }
 
 .Chat-button {
-    margin-left: 60%;
+    margin-left: 30%;
     margin-top: 20px;
 
 }
 
+.search-field {
+    margin-left: 40px;
+    margin-top: 20px;
+
+}
 .Item-create {
     position: absolute;
     bottom: 91.2%;
