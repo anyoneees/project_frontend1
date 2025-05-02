@@ -25,7 +25,7 @@ function SwapMenu() {
         try {
             const response = await axios.delete(`http://127.0.0.1:8000/api/clothing-items/${id}/`, {
                 headers: {
-                    Authorization: `Token fe1242edcdcb90517e61704406d53be9d4d2020a`, // Замените на реальный токен
+                    Authorization: `Token 9eb006f269041fddfd765332b2357b8d8c145f30`, // Замените на реальный токен
                 },
             });
             console.log("Item deleted successfully:", response.status);
@@ -38,7 +38,7 @@ function SwapMenu() {
             try {
                 const response = await axios.get(`http://127.0.0.1:8000/api/clothing-items/${id}/`, {
                     headers: {
-                        Authorization: `Token fe1242edcdcb90517e61704406d53be9d4d2020a`, // Замените YOUR_AUTH_TOKEN на реальный токен
+                        Authorization: `Token 9eb006f269041fddfd765332b2357b8d8c145f30`, // Замените YOUR_AUTH_TOKEN на реальный токен
                     },
                 });
                 setItem(response.data);
@@ -68,13 +68,42 @@ function SwapMenu() {
             />
             <NavBar/>
 
+
             <div className="Item-menu-main-block">
-                <div className="Info-menu-main-block">
-                    <div className="Info-text">
-                        {item.title}
+                <div className="info-menu-image-block">
+                    <div className="Image-panel-swapMenu">
+                        <img className="Image-swapMenu" src={item.image}/>
+
                     </div>
-                    <div className="Info-description">
-                        {item.description}
+                    <div className="Extra-image-swapMenu">
+                        <div className="Item-image-swapmenu">
+                            <img className="Item-image-swapmenu-micro" src={item.image}/>
+                        </div>
+                        <div className="Item-image-swapmenu">
+                            <img className="Item-image-swapmenu-micro" src={item.image}/>
+                        </div>
+                        <div className="Item-image-swapmenu">
+                            <img className="Item-image-swapmenu-micro" src={item.image}/>
+                        </div>
+                        <div className="Item-image-swapmenu">
+                            <img className="Item-image-swapmenu-micro" src={item.image}/>
+                        </div>
+                        <div className="Item-image-swapmenu">
+                            <img className="Item-image-swapmenu-micro" src={item.image}/>
+                        </div>
+                        <div className="Item-image-swapmenu">
+                            <img className="Item-image-swapmenu-micro" src={item.image}/>
+                        </div>
+                    </div>
+                </div>
+                <div className="Info-menu-main-block">
+                    <div className="Item-menu-info-block">
+                        <div className="Info-text">
+                            {item.title}
+                        </div>
+                        <div className="Info-description">
+                            {item.description}
+                        </div>
                     </div>
                     <Button variant="success" onClick={handleExchange} className="trade-button"
                     >
@@ -84,31 +113,6 @@ function SwapMenu() {
                     >
                         Удалить
                     </Button>
-                </div>
-
-                <div className="Image-panel-swapMenu">
-                    <img className="Image-swapMenu" src={item.image}/>
-
-                </div>
-                <div className="Extra-image-swapMenu">
-                    <div className="Item-image-swapmenu">
-                        <img className="Item-image-swapmenu-micro" src={item.image}/>
-                    </div>
-                    <div className="Item-image-swapmenu">
-                        <img className="Item-image-swapmenu-micro" src={item.image}/>
-                    </div>
-                    <div className="Item-image-swapmenu">
-                        <img className="Item-image-swapmenu-micro" src={item.image}/>
-                    </div>
-                    <div className="Item-image-swapmenu">
-                        <img className="Item-image-swapmenu-micro" src={item.image}/>
-                    </div>
-                    <div className="Item-image-swapmenu">
-                        <img className="Item-image-swapmenu-micro" src={item.image}/>
-                    </div>
-                    <div className="Item-image-swapmenu">
-                        <img className="Item-image-swapmenu-micro" src={item.image}/>
-                    </div>
                 </div>
 
             </div>

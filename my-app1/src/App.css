@@ -177,6 +177,9 @@
     width: 1580px;
     height: 1024px;
 }
+.Item-menu-info-block{
+
+}
 
 .Chat-main {
     background-color: #EDF2F2;
@@ -295,7 +298,6 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    margin-left: 800px;
     margin-top: 30px;
     color: white;
     text-align: center;
@@ -352,5 +354,10 @@
 
 .Item-menu-main-block{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width:100%;
+}
+.info-menu-image-block{
+    margin-top: 30px;
 }
