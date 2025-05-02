@@ -8,7 +8,6 @@ import {Button} from "react-bootstrap";
 export default function MainPage() {
     const [items, setItems] = useState([]);
     const [error, setError] = useState(null);
-    const [modalShow, setModalShow] = useState(false);
     useEffect(() => {
         const fetchItems = async () => {
             try {
@@ -25,9 +24,6 @@ export default function MainPage() {
 
         fetchItems();
     }, []);
-    const handleItemCreated = (newItem) => {
-        setItems((prevItems) => [...prevItems, newItem]);
-    };
 
     return (
         <div className="Main-page">
@@ -37,18 +33,7 @@ export default function MainPage() {
                 integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
                 crossOrigin="anonymous"
             />
-            <NavBar/>
-            <div className="Item-create">
-                <Button style={{ backgroundColor: "#4F646F", borderColor: "#4F646F", borderRadius:"25px" }}
-                        onClick={() => setModalShow(true)}>
-                    <img className="Create-pic" src="create.png"/>
-                </Button>
-            </div>
-            <CreateClothingItemModal
-                show={modalShow}
-                handleClose={() => setModalShow(false)}
-                onItemCreated={handleItemCreated}
-            />
+            <NavBar setItems={setItems}/>
             <div className="Item-section">
                 {error ? (
                     <p style={{color: "red"}}>Error: {error}</p>
