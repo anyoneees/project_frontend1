@@ -98,9 +98,8 @@
 }
 
 .Chat-button {
-    margin-left: 30%;
     margin-top: 20px;
-
+    margin-left: 30%;
 }
 
 .search-field {
@@ -109,9 +108,7 @@
 
 }
 .Item-create {
-    position: absolute;
-    bottom: 91.2%;
-    left: 70%;
+    margin-top: 20px;
 }
 
 .Profile-button {
