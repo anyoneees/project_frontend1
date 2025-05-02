@@ -154,8 +154,8 @@
 }
 
 .Image-swapMenu {
-    width: 500px;
-    height: 480px;
+    width: 510px;
+    height: 580px;
     border-radius: 5px;
 }
 
@@ -176,9 +176,6 @@
     background-color: #dee7e7;
     width: 1580px;
     height: 1024px;
-}
-.Item-menu-info-block{
-
 }
 
 .Chat-main {
@@ -249,7 +246,7 @@
 }
 
 .Profile-panel {
-    background-color: #dee7e7;
+    background-color: #fbfbfb;
     width: 100%;
     height: 740px;
     display: flex;
@@ -361,3 +358,41 @@
 .info-menu-image-block{
     margin-top: 30px;
 }
+.Info-description{
+    width: 400px;
+    height: 300px
+}
+.Icon-section{
+    display:flex ;
+    justify-content: center;
+    flex-direction: row;
+}
+.Icon-section-conteiner{
+    display:flex ;
+    justify-content: center;
+    flex-direction: column;
+}
+.Info{
+   height: 70px;
+   width: 100px;
+   border-radius: 5px;
+}
+.Pfp{
+    height: 70px;
+    width: 90px;
+    border-radius: 30px;
+ }
+.Settings{
+    height: 70px;
+    width: 100px;
+    border-radius: 5px;
+ }
+ .Acc-name{
+    height: 30px;
+    width: 325px;
+    background-color: #4F646F;
+ }
+ .Buttons{
+    display: flex;
+    justify-content: space-between;
+ }

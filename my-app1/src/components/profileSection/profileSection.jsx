@@ -12,25 +12,37 @@ function Profile() {
           crossOrigin="anonymous"
         />
         <NavBar />
-        <div className="Icon-panel">
-          <div className="Icon-background">
-            <div className="Icon-buttons-profile">
-              <Button
-                style={{ backgroundColor: "#73688D", borderColor: "#73688D" }}
-              >
-                <img className="Item-give" src="item-give.png" />
-              </Button>
-              <Button style={{ backgroundColor: "#73688D", borderColor: "#73688D" }}>
-                <img className ="Item-take" src="item-take.png"/>
-              </Button>
+        <div className="Icon-section">
+          <div className="Icon-section-conteiner">
+          <div className="Buttons">
+            <Button className="Info"
+              style={{ backgroundColor: "#D9D9D9", borderColor: "#D9D9D9", borderRadius: "15px"}}
+            >
+              <img
+                className="Info-pic"
+              />
+            </Button>
+            <Button className="Pfp"
+              style={{ backgroundColor: "#D9D9D9", borderColor: "#D9D9D9" , borderRadius: "60px"}}
+            >
+              <img
+                className="Profile-pic"
+              />
+            </Button>
+            <Button className="Settings"
+              style={{ backgroundColor: "#D9D9D9", borderColor: "#D9D9D9" , borderRadius: "15px"}}
+            >
+              <img
+                className="Settings-pic"
+              />
+            </Button>
             </div>
-          </div>
+            <div className="Acc-name">
+
+            </div>
+            </div>
         </div>
-        <div className="Item-block-profile">
-          <div className="My-item">
-            
-          </div>
-        </div>
+      
       </div>
     </a>
   );
