@@ -6,10 +6,6 @@
     margin-left: 11px;
 }
 
-.Item-image-swapmenu-micro {
-    width: 70px;
-    height: 65px;
-}
 
 .Item-block {
     width: 280px;
@@ -146,13 +142,13 @@
     height: 480px;
     background-color: #fbfbfb;
     border-radius: 10px;
-    margin-left: 20px;
+    margin-right: 10px;
 
 }
 
 .Image-swapMenu {
-    width: 510px;
-    height: 580px;
+    width:100%;
+    height: 100%;
     border-radius: 5px;
 }
 

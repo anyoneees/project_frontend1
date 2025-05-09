@@ -25,7 +25,7 @@ function SwapMenu() {
         try {
             const response = await axios.delete(`http://127.0.0.1:8000/api/clothing-items/${id}/`, {
                 headers: {
-                    Authorization: `Token fe1242edcdcb90517e61704406d53be9d4d2020a`, // Замените на реальный токен
+                    Authorization: `Token c942cc8329c6da518da2b1ba63bd0aaf04ea5b13`, // Замените на реальный токен
                 },
             });
             console.log("Item deleted successfully:", response.status);
@@ -38,7 +38,7 @@ function SwapMenu() {
             try {
                 const response = await axios.get(`http://127.0.0.1:8000/api/clothing-items/${id}/`, {
                     headers: {
-                        Authorization: `Token fe1242edcdcb90517e61704406d53be9d4d2020a`, // Замените YOUR_AUTH_TOKEN на реальный токен
+                        Authorization: `Token c942cc8329c6da518da2b1ba63bd0aaf04ea5b13`, // Замените YOUR_AUTH_TOKEN на реальный токен
                     },
                 });
                 setItem(response.data);
@@ -85,11 +85,11 @@ function SwapMenu() {
                             {item.description}
                         </div>
                     </div>
-                    <Button variant="success" onClick={handleExchange} className="trade-button"
+                    <Button style={{ backgroundColor: "#D9D9D9", borderColor: "#D9D9D9"}} onClick={handleExchange} className="trade-button"
                     >
                         Обменяться
                     </Button>
-                    <Button variant="danger" onClick={deleteFirstItem} className="delete-trade-button"
+                    <Button style={{ backgroundColor: "#D9D9D9", borderColor: "#D9D9D9"}}onClick={deleteFirstItem} className="delete-trade-button"
                     >
                         Удалить
                     </Button>
