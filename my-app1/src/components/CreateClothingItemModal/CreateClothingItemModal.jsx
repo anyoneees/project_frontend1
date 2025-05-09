@@ -6,7 +6,7 @@ const CreateClothingItemModal = ({show, handleClose, onItemCreated}) => {
     const [formData, setFormData] = useState({
         title: "",
         description: "",
-        size: "",
+        size: "default",
         image: null,
         is_available: true,
     });
@@ -46,8 +46,8 @@ const CreateClothingItemModal = ({show, handleClose, onItemCreated}) => {
                 },
             });
 
-            onItemCreated(response.data); // Вызываем callback после успешного создания
-            handleClose(); // Закрываем модальное окно
+            onItemCreated(response.data);
+            handleClose();
         } catch (err) {
             setError(err.response?.data || "An error occurred");
         }
@@ -85,18 +85,6 @@ const CreateClothingItemModal = ({show, handleClose, onItemCreated}) => {
                         />
                     </Form.Group>
 
-                    <Form.Group className="mb-3" controlId="size">
-                        <Form.Label>Размер</Form.Label>
-                        <Form.Control
-                            type="text"
-                            placeholder="Enter size"
-                            name="size"
-                            value={formData.size}
-                            onChange={handleChange}
-                            required
-                        />
-                    </Form.Group>
-
                     <Form.Group className="mb-3" controlId="image">
                         <Form.Label>Image</Form.Label>
                         <Form.Control
@@ -106,17 +94,6 @@ const CreateClothingItemModal = ({show, handleClose, onItemCreated}) => {
                         />
                     </Form.Group>
 
-                    <Form.Group className="mb-3" controlId="is_available">
-                        <Form.Check
-                            type="checkbox"
-                            label="Available"
-                            name="is_available"
-                            checked={formData.is_available}
-                            onChange={(e) =>
-                                setFormData((prev) => ({...prev, is_available: e.target.checked}))
-                            }
-                        />
-                    </Form.Group>
 
                     <Button  type="submit" style={{backgroundColor: "#4F646F", borderColor: "#4F646F" }}>
                     <img className="Create-pic" src="create.png"/>

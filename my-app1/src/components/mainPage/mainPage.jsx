@@ -2,8 +2,6 @@ import React, {useState, useEffect} from "react";
 import ItemList from "../itemList/itemList.jsx";
 import NavBar from "../NavBar/navBar.jsx";
 import axios from "axios";
-import CreateClothingItemModal from "../CreateClothingItemModal/CreateClothingItemModal";
-import {Button} from "react-bootstrap";
 
 export default function MainPage() {
     const [items, setItems] = useState([]);
