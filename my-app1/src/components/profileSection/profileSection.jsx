@@ -20,7 +20,7 @@ function Profile() {
                     "http://127.0.0.1:8000/api/clothing-items/",
                     {
                         headers: {
-                            Authorization: `Token c942cc8329c6da518da2b1ba63bd0aaf04ea5b13`,
+                            Authorization: `Token 973bdf511dbddbdb130686cdb7543d2c9d0507ad`,
                         },
                     }
                 );

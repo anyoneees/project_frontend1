@@ -11,7 +11,7 @@ export default function MainPage() {
             try {
                 const response = await axios.get("http://127.0.0.1:8000/api/clothing-items/", {
                     headers: {
-                        Authorization: `Token fe1242edcdcb90517e61704406d53be9d4d2020a`, // Замените YOUR_AUTH_TOKEN на реальный токен
+                        Authorization: `Token 973bdf511dbddbdb130686cdb7543d2c9d0507ad`, // Замените YOUR_AUTH_TOKEN на реальный токен
                     },
                 });
                 setItems(response.data);

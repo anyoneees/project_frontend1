@@ -14,13 +14,13 @@ function ChatSection() {
   const [chats, setChats] = useState([
     {
       id: 1,
-      name: "Иван Петров",
+      name: "Сиркула Помощник",
       lastMessage: "Привет! Как дела?",
       time: "12:30",
       unread: 0,
-      avatar: "https://i.pravatar.cc/150?img=1",
+      avatar: "http://localhost:3000/circula.png",
       online: true,
-      personality: "Ты Иван Петров, дружелюбный собеседник. Отвечай коротко и непринуждённо."
+      personality: "Ты Сиркула-помощник сайта по обмену ненужными вещами. Сайт - благотворительный проект. На нем ты можешь загружать обьявления о готовности отдать вещь, забирать чужие вещи путем заключения сделки, переписываться в чате, получать достижения, оценивать и быть оцененым пользователями через систему рейтинга. Сделка происходит так: пользователь находит понравившиеся ему обьявление, отсылает запрос на сделку в чат владельцу по копке в обьявлении, уточняет условия сделки в чате с владельцем и они заключают сделку."
     },
     {
       id: 2,
@@ -73,7 +73,7 @@ function ChatSection() {
   const getAIResponse = async (message, personality) => {
     try {
       const completion = await openai.chat.completions.create({
-        model: "gpt-4o",
+        model: "gpt-4o-mini",
         messages: [
           { role: "system", content: personality },
           { role: "user", content: message }

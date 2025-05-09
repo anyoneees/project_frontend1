@@ -25,7 +25,7 @@ function SwapMenu() {
         try {
             const response = await axios.delete(`http://127.0.0.1:8000/api/clothing-items/${id}/`, {
                 headers: {
-                    Authorization: `Token c942cc8329c6da518da2b1ba63bd0aaf04ea5b13`, // Замените на реальный токен
+                    Authorization: `Token 973bdf511dbddbdb130686cdb7543d2c9d0507ad`, // Замените на реальный токен
                 },
             });
             console.log("Item deleted successfully:", response.status);
@@ -38,7 +38,7 @@ function SwapMenu() {
             try {
                 const response = await axios.get(`http://127.0.0.1:8000/api/clothing-items/${id}/`, {
                     headers: {
-                        Authorization: `Token c942cc8329c6da518da2b1ba63bd0aaf04ea5b13`, // Замените YOUR_AUTH_TOKEN на реальный токен
+                        Authorization: `Token 973bdf511dbddbdb130686cdb7543d2c9d0507ad`, // Замените YOUR_AUTH_TOKEN на реальный токен
                     },
                 });
                 setItem(response.data);
