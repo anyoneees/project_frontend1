@@ -1,18 +1,18 @@
-import {Container, Button} from "react-bootstrap";
-import React, {useState, useEffect} from "react";
-import {useParams} from "react-router-dom";
+import { Container, Button, Card, Row, Col } from "react-bootstrap";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import axios from "axios";
 import NavBar from "../NavBar/navBar";
 import SuccessModal from "../successModal/SuccessModal";
+import "./SwapMenu.css";
 
 function SwapMenu() {
-    const {id} = useParams();
+    const { id } = useParams();
     const [item, setItem] = useState(null);
     const [error, setError] = useState(null);
     const [showModal, setShowModal] = useState(false);
 
     const handleExchange = () => {
-
         setTimeout(() => {
             setShowModal(true);
         }, 1000);
@@ -21,11 +21,13 @@ function SwapMenu() {
     const closeModal = () => {
         setShowModal(false);
     };
+
     const deleteFirstItem = async () => {
         try {
+            const token = localStorage.getItem("authToken");
             const response = await axios.delete(`http://127.0.0.1:8000/api/clothing-items/${id}/`, {
                 headers: {
-                    Authorization: `Token 973bdf511dbddbdb130686cdb7543d2c9d0507ad`, // Замените на реальный токен
+                    Authorization: `Token ${token}`,
                 },
             });
             console.log("Item deleted successfully:", response.status);
@@ -33,12 +35,14 @@ function SwapMenu() {
             console.error("Error deleting item:", error.response?.data || error.message);
         }
     };
+
     useEffect(() => {
         const fetchItemDetails = async () => {
             try {
+                const token = localStorage.getItem("authToken");
                 const response = await axios.get(`http://127.0.0.1:8000/api/clothing-items/${id}/`, {
                     headers: {
-                        Authorization: `Token 973bdf511dbddbdb130686cdb7543d2c9d0507ad`, // Замените YOUR_AUTH_TOKEN на реальный токен
+                        Authorization: `Token ${token}`,
                     },
                 });
                 setItem(response.data);
@@ -57,8 +61,9 @@ function SwapMenu() {
     if (!item) {
         return <Container><p>Loading...</p></Container>;
     }
+
     return (
-        <div className="Item-menu">
+        <div className="swap-menu-container">
             <SuccessModal show={showModal} onClose={closeModal}/>
             <link
                 rel="stylesheet"
@@ -68,35 +73,48 @@ function SwapMenu() {
             />
             <NavBar/>
 
+            <Container className="mt-4">
+                <Card className="shadow-sm">
+                    <Row className="g-0">
+                        <Col md={6} className="d-flex align-items-center justify-content-center p-4">
+                            <div className="image-container">
+                                <img
+                                    src={item.image}
+                                    alt={item.title}
+                                    className="item-image img-fluid"
+                                />
+                            </div>
+                        </Col>
+                        <Col md={6}>
+                            <Card.Body className="h-100 d-flex flex-column p-4">
+                                <div className="mb-auto">
+                                    <Card.Title className="item-title mb-3">{item.title}</Card.Title>
+                                    <Card.Text className="item-description">
+                                        {item.description}
+                                    </Card.Text>
+                                </div>
 
-            <div className="Item-menu-main-block">
-                <div className="info-menu-image-block">
-                    <div className="Image-panel-swapMenu">
-                        <img className="Image-swapMenu" src={item.image}/>
-
-                    </div>
-                </div>
-                <div className="Info-menu-main-block">
-                    <div className="Item-menu-info-block">
-                        <div className="Info-text">
-                            {item.title}
-                        </div>
-                        <div className="Info-description">
-                            {item.description}
-                        </div>
-                    </div>
-                    <Button style={{ backgroundColor: "#D9D9D9", borderColor: "#D9D9D9"}} onClick={handleExchange} className="trade-button"
-                    >
-                        Обменяться
-                    </Button>
-                    <Button style={{ backgroundColor: "#D9D9D9", borderColor: "#D9D9D9"}}onClick={deleteFirstItem} className="delete-trade-button"
-                    >
-                        Удалить
-                    </Button>
-                </div>
-
-            </div>
-
+                                <div className="button-group mt-4 d-flex">
+                                    <Button
+                                        variant="success"
+                                        onClick={handleExchange}
+                                        className="action-button-swap exchange-button me-3"
+                                    >
+                                        Обменяться
+                                    </Button>
+                                    <Button
+                                        variant="outline-danger"
+                                        onClick={deleteFirstItem}
+                                        className="action-button-swap delete-button"
+                                    >
+                                        Удалить
+                                    </Button>
+                                </div>
+                            </Card.Body>
+                        </Col>
+                    </Row>
+                </Card>
+            </Container>
         </div>
     );
 }

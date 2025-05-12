@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react";
 import NavBar from "../NavBar/navBar";
-import ItemList from "../itemList/itemList";
 import {Button, Spinner} from "react-bootstrap";
 import axios from "axios";
 import "./Profile.css";
@@ -13,14 +12,13 @@ function Profile() {
     useEffect(() => {
         const fetchUserItems = async () => {
             try {
-                // Получаем токен из localStorage
                 const token = localStorage.getItem("authToken");
 
                 const response = await axios.get(
                     "http://127.0.0.1:8000/api/clothing-items/",
                     {
                         headers: {
-                            Authorization: `Token 973bdf511dbddbdb130686cdb7543d2c9d0507ad`,
+                            Authorization: `Token ${token}`,
                         },
                     }
                 );

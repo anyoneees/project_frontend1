@@ -8,10 +8,11 @@ export default function MainPage() {
     const [error, setError] = useState(null);
     useEffect(() => {
         const fetchItems = async () => {
+            const token = localStorage.getItem("authToken");
             try {
                 const response = await axios.get("http://127.0.0.1:8000/api/clothing-items/", {
                     headers: {
-                        Authorization: `Token 973bdf511dbddbdb130686cdb7543d2c9d0507ad`, // Замените YOUR_AUTH_TOKEN на реальный токен
+                        Authorization: `Token ${token}`,
                     },
                 });
                 setItems(response.data);

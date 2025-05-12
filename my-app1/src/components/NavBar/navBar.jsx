@@ -38,7 +38,7 @@ function NavBar(props) {
         <div className="Item-create">
           <Button style={{backgroundColor: "#4F646F", borderColor: "#4F646F", borderRadius: "25px"}}
                   onClick={() => setModalShow(true)}>
-            <img className="Create-pic" src="create.png"/>
+            <img className="Create-pic" src="http://localhost:3000/create.png"/>
           </Button>
         </div>
         <div className="Profile-button">

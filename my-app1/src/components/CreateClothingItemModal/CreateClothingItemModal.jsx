@@ -39,9 +39,10 @@ const CreateClothingItemModal = ({show, handleClose, onItemCreated}) => {
         form.append("is_available", formData.is_available);
 
         try {
+            const token = localStorage.getItem("authToken");
             const response = await axios.post("http://127.0.0.1:8000/api/clothing-items/", form, {
                 headers: {
-                    Authorization: `Token 973bdf511dbddbdb130686cdb7543d2c9d0507ad`,
+                    Authorization: `Token ${token}`,
                     "Content-Type": "multipart/form-data",
                 },
             });

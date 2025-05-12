@@ -1,0 +1,97 @@
+.swap-menu-container {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.item-image {
+    max-height: 500px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.image-container {
+    width: 100%;
+    text-align: center;
+}
+
+.item-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.item-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.action-button-swap {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 4px !important;
+    transition: all 0.2s ease;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.exchange-button {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    border-radius: 4px !important;
+}
+
+.exchange-button:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+    transform: scale(1.02);
+}
+
+.delete-button {
+    border-width: 2px;
+    border-radius: 4px !important;
+}
+
+.delete-button:hover {
+    transform: scale(1.02);
+    background-color: #f8f9fa;
+}
+
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    border: none;
+}
+
+.button-group {
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .item-image {
+        max-height: 300px;
+    }
+
+    .item-title {
+        font-size: 1.5rem;
+    }
+
+    .item-description {
+        font-size: 1rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .action-button {
+        width: 100%;
+        margin-right: 0 !important;
+        margin-bottom: 10px;
+    }
+}
