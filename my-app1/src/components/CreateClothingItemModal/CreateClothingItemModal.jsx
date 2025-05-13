@@ -9,6 +9,7 @@ const CreateClothingItemModal = ({show, handleClose, onItemCreated}) => {
         size: "default",
         image: null,
         is_available: true,
+        category: "clothing",
     });
 
     const [error, setError] = useState(null);
@@ -37,6 +38,7 @@ const CreateClothingItemModal = ({show, handleClose, onItemCreated}) => {
         form.append("size", formData.size);
         form.append("image", formData.image);
         form.append("is_available", formData.is_available);
+        form.append("category", formData.category);
 
         try {
             const token = localStorage.getItem("authToken");
@@ -86,8 +88,22 @@ const CreateClothingItemModal = ({show, handleClose, onItemCreated}) => {
                         />
                     </Form.Group>
 
+                    <Form.Group className="mb-3" controlId="category">
+                        <Form.Label>Категория</Form.Label>
+                        <Form.Select
+                            name="category"
+                            value={formData.category}
+                            onChange={handleChange}
+                        >
+                            <option value="clothing">Одежда</option>
+                            <option value="furniture">Мебель</option>
+                            <option value="toys">Игрушки</option>
+                            <option value="household">Бытовые предметы</option>
+                        </Form.Select>
+                    </Form.Group>
+
                     <Form.Group className="mb-3" controlId="image">
-                        <Form.Label>Image</Form.Label>
+                        <Form.Label>Изображение</Form.Label>
                         <Form.Control
                             type="file"
                             accept="image/*"
@@ -95,9 +111,8 @@ const CreateClothingItemModal = ({show, handleClose, onItemCreated}) => {
                         />
                     </Form.Group>
 
-
-                    <Button  type="submit" style={{backgroundColor: "#4F646F", borderColor: "#4F646F" }}>
-                    <img className="Create-pic" src="create.png"/>
+                    <Button type="submit" style={{backgroundColor: "#4F646F", borderColor: "#4F646F" }}>
+                        <img className="Create-pic" src="create.png"/>
                     </Button>
                 </Form>
             </Modal.Body>
