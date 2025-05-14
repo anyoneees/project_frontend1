@@ -1,11 +1,11 @@
 import React from "react";
 import {Modal, Button} from "react-bootstrap";
 
-export default function SuccessModal({show, onClose}) {
+export default function SuccessExchangeModal({show, onClose}) {
     return (
         <Modal show={show} onHide={onClose} centered>
             <Modal.Header closeButton>
-                <Modal.Title>Предложение обмена успешно отправлено!</Modal.Title>
+                <Modal.Title>Вы подтвердили обмен!</Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 <p>Спасибо, что используете наш сервис!</p>
