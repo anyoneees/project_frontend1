@@ -1,4 +1,4 @@
-import {Button} from "react-bootstrap";
+import {Button} from 'reactstrap';
 import LoginWindow from "../DropWindow/dropWindow.jsx";
 import SignInWindow from "../RegistrationWindow/registrationWindow.jsx";
 import SearchComponent from "../searchComponent/searchComponent.js";
@@ -12,6 +12,9 @@ function NavBar(props) {
     };
     const handleItemCreated = (newItem) => {
         props.setItems((prevItems) => [...prevItems, newItem]);
+    };
+    const handleLogOut =()=>{
+        localStorage.removeItem('authToken');
     };
     return (
         <div className="Nav-bar">
@@ -63,6 +66,8 @@ function NavBar(props) {
                     <div className="SignIn-button">
                         <SignInWindow/>
                     </div>}
+                {(localStorage.getItem("authToken") !== undefined && localStorage.getItem("authToken")) !== null ? <Button color="danger" onClick={handleLogOut}>Выйти</Button> :
+                    <></>}
 
             </header>
         </div>
