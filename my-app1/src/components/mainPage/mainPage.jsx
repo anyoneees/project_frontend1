@@ -22,7 +22,7 @@ export default function MainPage() {
                 setItems(response.data);
                 setFilteredItems(response.data);
             } catch (err) {
-                setError(err.message);
+                setError("Войдите в аккаунт прежде чем пользоваться сервисом");
             }
         };
 
