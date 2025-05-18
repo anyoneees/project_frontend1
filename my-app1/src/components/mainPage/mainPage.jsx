@@ -106,7 +106,7 @@ export default function MainPage() {
 
             <div className="Item-section container">
                 {error ? (
-                    <p style={{color: "red"}}>Error: {error}</p>
+                    <p style={{color: "red"}}>{error}</p>
                 ) : filteredItems.length === 0 ? (
                     <p>Нет товаров в категории "{getCategoryName(activeFilter)}"</p>
                 ) : (
