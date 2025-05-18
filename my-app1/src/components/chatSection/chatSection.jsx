@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from "react";
 import NavBar from "../NavBar/navBar";
-import {InputGroup, FormControl, Button, Badge, Spinner} from "react-bootstrap";
+import {InputGroup, FormControl, Button,  Spinner} from "react-bootstrap";
 import "./ChatSection.css";
 import OpenAI from "openai";
-import SuccessExchangeModal from "../SucessExchangeModal/SuccessExchangeModal";
 
 const openai = new OpenAI({
     baseURL: "https://api.proxyapi.ru/openai/v1",
@@ -71,15 +70,6 @@ function ChatSection() {
     const filteredChats = chats.filter(chat =>
         chat.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
-
-    const handleExchange = () => {
-        setTimeout(() => {
-            setShowModal(true);
-        }, 1000);
-    };
-    const closeModal = () => {
-        setShowModal(false);
-    };
 
     const getAIResponse = async (message, personality) => {
         try {
@@ -155,7 +145,6 @@ function ChatSection() {
                 crossOrigin="anonymous"
             />
             <NavBar/>
-            <SuccessExchangeModal show={showModal} onClose={closeModal}/>
 
             <div className="chat-container">
                 <div className="chat-sidebar">
@@ -190,15 +179,6 @@ function ChatSection() {
                                         <p>{chat.lastMessage}</p>
                                     </div>
                                 </div>
-                                {chat.name === "Мария Сидорова" ?
-                                    <Button
-                                        variant="success"
-                                        onClick={handleExchange}
-                                        className="action-button-swap-access exchange-button me-3"
-                                    >
-                                        <img className="profile-pic" src="http://localhost:3000/check.png"/>
-                                    </Button> : <></>
-                                }
                             </div>
                         ))}
                     </div>

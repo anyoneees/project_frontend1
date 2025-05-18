@@ -27,12 +27,16 @@ function LoginWindow() {
             );
             const token = response.data.token;
 
-            localStorage.setItem('authToken', token);
+
+            localStorage.setItem('authToken', response.data.token);
+            localStorage.setItem('userID', response.data.user_id);
+            localStorage.setItem('username', response.data.username);
 
             axios.defaults.headers.common['Authorization'] = `Token ${token}`;
 
             setModal(false);
         } catch (err) {
+            console.log(err)
             setError(err.response?.data?.detail || 'Ошибка авторизации');
         }
     };

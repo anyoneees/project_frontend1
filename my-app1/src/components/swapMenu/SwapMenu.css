@@ -71,6 +71,59 @@
 .button-group {
     gap: 15px;
 }
+.swap-menu-container {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.item-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.button-group {
+    gap: 12px;
+}
+
+.swap-menu-container {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.item-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+    border: none;
+}
+
+.list-group-item {
+    border-left: none;
+    border-right: none;
+}
+
+.list-group-item:first-child {
+    border-top: none;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
 
 @media (max-width: 768px) {
     .item-image {
