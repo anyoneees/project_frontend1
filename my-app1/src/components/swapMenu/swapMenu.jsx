@@ -153,10 +153,9 @@ function SwapMenu() {
                                             </Button>
                                         ) : (
                                             <Button
-                                                variant="dark"
+                                                variant="success"
                                                 onClick={handleExchange}
                                                 className="w-100 py-3 fw-bold"
-                                                style={{backgroundColor: "#000", border: "none"}}
                                             >
                                                 Обменяться
                                             </Button>
