@@ -22,7 +22,7 @@ export default function MainPage() {
                 setItems(response.data);
                 setFilteredItems(response.data);
             } catch (err) {
-                setError(err.message);
+                setError("Войдите в аккаунт прежде чем пользоваться сервисом");
             }
         };
 
@@ -106,7 +106,7 @@ export default function MainPage() {
 
             <div className="Item-section container">
                 {error ? (
-                    <p style={{color: "red"}}>Error: {error}</p>
+                    <p style={{color: "red"}}>{error}</p>
                 ) : filteredItems.length === 0 ? (
                     <p>Нет товаров в категории "{getCategoryName(activeFilter)}"</p>
                 ) : (
